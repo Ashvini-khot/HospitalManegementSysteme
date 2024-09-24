@@ -1,0 +1,102 @@
+<!DOCTYPE html >
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Form</title>
+        <style>
+            
+           label {
+                display: inline-block;
+                width: 200px;
+                height: 20px
+                
+                
+            }
+            h1{
+            background-color: rgb(225, 238, 241);
+            color: rgb(109, 90, 211);
+            align-content: center;
+            }
+            body
+            {
+                background-color: aqua;
+            }
+            form{
+                border: 2px solid rgb(202, 132, 179);
+                width: 400px;
+                background-color: rgb(241, 188, 213);
+            }
+            button
+            {
+                display: block;
+                margin: auto;
+                color: #e9190a;
+                background-color: rgb(207, 198, 226);
+            }
+        </style>
+        </head>
+        <Body>
+            <h1>ContactUs</h1>
+            <form method="get" action="">
+                <div><label for="fullname">Name</label>
+                <input type="text" id ="fullname" name="fullname" placeholder="Enter Your Full Name"/>
+                </div>
+               
+                <div><label for="email">Email</label> 
+                <input type="email" id="email" name="email" required/>
+                </div>
+                
+                <div><label for="adhar"> Adhar</label>
+                <input type="text" id="adhar" name="adhar"/>
+                </div>
+
+                <div>
+                <label for="date">Date</label>
+                <input type="date" id="date" name="date"/>
+                </div>
+                <div>
+                    <label >Gender</label>
+                    <input type="radio" id="mgender" name="Gender" value="Male"/>Male
+                    <input type="radio" id="fgender" name="Gender" value="Female"/>Female
+                  </div>
+                  
+                  <div>
+                     
+                <label>Choose Subjects</label>
+                
+                <lable>English</lable><input type="checkbox" id="eng" name="Subjects" value="eng"/>
+                <lable>Marathi</lable><input type="checkbox" id="marathi" name="Subjects" value="marathi"/>
+                <lable>computer</lable><input type="checkbox" id="computer" name="Subjects" value="computer"/>
+                  </div>
+                  
+
+                <div><lable for ="favmov">Select Best Movies</lable>
+                <select id=" favmov" name="favmov" multiple >
+                    <option id="">Select</option>
+                    <option id="pk">PK</option>
+                    <option id="3idiot">3Idiot</option>
+                    <option id="jubwemet">JubWEMet</option>
+                    
+                </select></div>
+                
+                <label>Choose fav. Colour:</label>
+                <input type="color">
+                <div>
+                    <label for="sal"> Salary</label>
+                    10000<input type="range" id="sal" value="sal" min="10000" max="500000" >50000
+
+                </div>
+                
+                    <label for="aboutu">AboutYou</label>
+                <textarea id="aboutu" name="aboutu" maxlength="200" placeholder="AboutYou"> </textarea>
+                  </div>
+                  <div>
+                    <button type="submit" >SubmitInformation</button>
+                  </div>
+                
+                  <div> 
+
+            </form>        
+        </Body>
+        </html>
