@@ -9,23 +9,33 @@
            label {
                 display: inline-block;
                 width: 200px;
-                height: 20px
+                height: 40px
                 
+                
+            }input{
+                display: inline-block;
+                height: 40px;
                 
             }
             h1{
-            background-color: rgb(225, 238, 241);
-            color: rgb(109, 90, 211);
-            align-content: center;
+            align-items: center;
+            color: blue;
+            text-align: center;
+            
             }
             body
             {
                 background-color: aqua;
             }
             form{
+                
                 border: 2px solid rgb(202, 132, 179);
-                width: 400px;
+                width: 600px;
                 background-color: rgb(241, 188, 213);
+                border: solid;
+                margin: 40px;
+                padding: 40px;
+                margin-left: 17%;
             }
             button
             {
@@ -34,12 +44,23 @@
                 color: #e9190a;
                 background-color: rgb(207, 198, 226);
             }
+            select
+            {
+                width: 200px;
+                height: 100px;
+            }
+            option{
+
+            }
+            
         </style>
         <link rel="stylesheet" href="./css/style.css">
         </head>
         <Body>
-            <h1>ContactUs</h1>
-            <form method="get" action="">
+            <h1>Contact-Us</h1>
+            <!--<h1>ContactUs</h1>-->
+            <form method="get" action="" >
+                <lable></lable>
                 <div><label for="fullname">Name</label>
                 <input type="text" id ="fullname" name="fullname" placeholder="Enter Your Full Name"/>
                 </div>
@@ -72,7 +93,7 @@
                   </div>
                   
 
-                <div><lable for ="favmov">Select Best Movies</lable>
+                <div ><label for ="favmov">Select Best Movies</label>
                 <select id=" favmov" name="favmov" multiple >
                     <option id="">Select</option>
                     <option id="pk">PK</option>
