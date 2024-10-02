@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>effects</title>
+    <style>
+        section.flexx
+        {
+            display: flex;
+            margin: 10px;
+            flex-direction: row;
+            background-color: hotpink;
+            flex-wrap: wrap;
+            height: 100vh;
+            align-items: flex-start;
+
+        }
+        section div
+        {
+            width: 20vw;
+            margin: 20px;
+        }
+        section div.boxshadow
+        {
+            width: 200px;
+            height: 200px;
+            background-color: aqua;
+            box-shadow: blueviolet 20px 20px 10px;
+
+        }
+        section div.lineareffect
+        {
+            width: 200px;
+            height: 200px;
+            background-image: linear-gradient(red,blue,green)
+
+        }
+        section div.radialeffect
+        {
+            width: 200px;
+            height: 200px;
+            border-radius: 50px;
+            background-image:radial-gradient(red,blue,green)
+            
+            
+
+        }
+        section div.rotation
+        {
+            width: 200px;
+            height: 200px;
+            background-color: rgb(48, 122, 122);
+            transform: rotateX(50deg);
+           /* transform: rotateY(30deg)*/
+        }
+        section div.trans
+        {
+            width: 200px;
+            height: 200px;
+            background-color: chartreuse;
+            translate: 0px 90px;
+        }
+        section div.scale1
+        {
+            width: 200px;
+            height: 200px;
+            background-color: rgb(202, 196, 231);
+            /*scale: 400px 400px;*/
+            transform: scale(160%,100%);
+            position:relative;
+            left:40px;
+        }
+        section div h1{
+            text-align: center;
+            text-decoration: wavy;
+        
+        }
+        section div.skew
+        {
+       height: 200px;
+       width: 200px;
+       background-color: cornflowerblue;
+       transform: skewX(315deg);
+        }
+        section div.transorigin
+        {
+            width: 100px;
+            height: 100px;
+            background-color: rgb(248, 202, 248);
+            transform: rotateZ(223deg);
+            transform-origin: 100% 100%;
+        }
+        h2{
+            display: inline;
+            position: relative;
+            left: 500px;
+            color: rgb(28, 28, 192);
+            text-shadow: rgb(240, 121, 194) 5px 6px;
+        }
+    </style>
+    
+    
+</head>
+<body>
+    <link rel="stylesheet" href="./css/style.css">
+    <h2>Effects</h2>
+    <section class="flexx">
+       
+        <div class="boxshadow"> <h1>ShadowBox</h1></div>
+        <div class="lineareffect"><h1>Lineareffect</h1></div>
+        <div class="radialeffect"><h1>radial-gradient</h1></div>
+        <div class="rotation"><h1>rotation</h1></div>
+        <div class="trans"><h1>trans</h1></div>
+        <div class="scale1"><h1>scale</h1></div>
+        <div class="skew"><h1>Skew</h1></div>
+        <div class="transorigin"><h1>tr.origin</h1></div>
+        <div></div>
+    </section>
+</body>
+</html>

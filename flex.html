@@ -6,17 +6,22 @@
     <title>FlexBox</title>                
     <style>
         section>div{ 
-            padding: 5px;
+            padding: 10px;
             
             border: 1px solid rgb(62, 132, 238);
             height: 500px;
             width: 30%;
             margin: 5px;
+           /* overflow-x: hidden;*/
+           /* overflow-y: scroll;*/
+           overflow: hidden;
         }
         section div img
         {
             height: 30vh;
             width: 25vw;
+            position: relative;
+            left: 20px;
         }
         section.flex-container
         {
@@ -33,6 +38,17 @@
             position: relative;
             left: 550px;
             width: 250px;
+            color: rgb(223, 44, 83);
+            text-shadow:blue 5px 5px;
+            font-style: oblique;
+            
+        }
+        section div h4{
+            background-color: aqua;
+            color: chocolate;
+            position: relative;
+            left: 100px;
+            width: 50px;
             
         }
     </style>
