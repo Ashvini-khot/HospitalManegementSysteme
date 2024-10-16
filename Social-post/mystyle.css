@@ -1,0 +1,256 @@
+.background-wrap
+    {
+        height: 100vh;
+        width: 100vw;
+        background-color: gray;
+    }
+    .background-wrap .background{
+        background-color: white;
+        padding: 20px;
+
+
+    }
+    .main-heading1
+    {
+        position: absolute;
+        top: 47mm;
+        left: 20mm;
+        font-size: 45pt;
+        color: black;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        font-weight:normal;
+        
+    } 
+    .main-heading2
+    {
+        position: absolute;
+        top: 65mm;
+        left: 20mm;
+        font-size: 45pt;
+        color: rgb(224, 36, 36);
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: bolder;
+    }
+    .main-heading3
+    {
+        position: absolute;
+        top: 79mm;
+        left: 20mm;
+        font-size: 45pt;
+        color: rgb(19, 1, 1);
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: bolder;
+    }
+.social-post-para
+{
+    position: absolute;
+        top: 110mm;
+        left: 20mm;
+       
+        color: rgb(19, 1, 1);
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 15pt;
+       
+}
+.learnmore-button
+{
+    position: absolute;
+    top: 150mm;
+    left: 20mm;
+    background-color: rgb(2, 49, 2);
+    border-radius: 3mm;
+    color: white;
+    
+    width: 40mm;
+    height: 8mm;
+}
+
+
+.callbutton
+{
+    position: absolute;
+    top: 185mm;
+    left: 20mm;
+    background-color:rgb(2, 49, 2);
+    border-radius: 1mm;
+    width: 40pt;
+    height: 40pt;
+    border-color: red;
+    clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+    border-width: thick;
+   
+    color: white;
+
+}
+.wbutton
+{
+    position: absolute;
+    top: 185mm;
+    left: 110mm;
+    background-color: rgb(2, 49, 2);
+    border-radius: 1mm;
+    width: 40pt;
+    height: 40pt;
+    border-color: red;
+    clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+    border-width: thick;
+    color: white;
+}
+.call-for
+{
+    position: absolute;
+    top: 185mm;
+    left:35mm;
+   font-size: 15pt; 
+   color: crimson;
+   font-weight: bolder;
+  
+   
+
+
+}
+.visit
+{position: absolute;
+    top: 185mm;
+    left: 127mm;
+    font-size: 15pt;
+    color: crimson;
+    font-weight: bolder;
+}
+
+
+.mob-no
+{
+    position: absolute;
+    top: 190mm;
+    left: 35mm;
+    font-size: 22pt;
+    color: rgb(5, 53, 5);
+    font-weight: bolder;
+}
+.www
+{
+    position: absolute;
+    top: 190mm;
+    left: 127mm;
+    font-size: 15pt;
+    color: rgb(5, 53, 5);
+    font-weight: bolder;
+}
+.vertiline
+{
+    position: absolute;
+    top: 185mm;
+    left: 95mm;
+    height: 13mm;
+    width: 1mm;
+    background-color: rgb(2, 44, 2);
+}
+.horizontline {
+    width: 87mm;
+    height: 1.5mm;
+    background-color: crimson;
+    position: absolute;
+    top: 135mm;
+    left: 20mm;
+}
+.horizontline2 {
+    width: 100mm;
+    height: 1.5mm;
+    background-color: red;
+    position: absolute;
+    top: 194mm;
+    left: 175mm;
+}
+.header-content-blacktrim {
+    height: 90mm;
+    width: 300mm;
+    position: absolute;
+    top: -122mm;
+    left: -21mm;
+    background-color: black;
+    transform: rotateZ(151deg);
+}
+.header-content-blackslice {
+    position: absolute;
+    top: -26mm;
+    left: -30.5mm;
+    background-color: black;
+    height: 45mm;
+    width: 50mm;
+    transform: skewY(213deg);
+}
+.girl-image{
+    position: absolute;
+    left: 00mm;
+    top: 10mm;
+}
+.hexagon {
+    top: 15mm;
+    left: 120mm;
+    position: absolute;
+    margin: 0 auto;
+    background-color: red;
+    border-radius: 10px;
+    width: 147mm;
+    height: 85mm;
+    box-sizing: border-box;
+    transition: all 1s;
+    border: 0.4vh solid transparent;
+}
+.squrebox
+{
+    height: 85mm;
+    width: 115mm;
+    background-color: black;
+    position: absolute;
+    /* top: 50mm; */
+    top: 1mm;
+    left: 130mm;
+    transform: rotateZ(-31deg);
+}
+.leftslice
+{
+    height: 60mm;
+    width: 20mm;
+    background-color: black;
+    position: absolute;
+    top: 16mm;
+    left: 120mm;
+}
+		/* Creating pseudo-class */
+		.hexagon:before, .hexagon:after { 
+			content: ""; 
+			border: inherit; 
+			position: absolute; 
+			/*top: -0.5vh; 
+			left: -0.5vh; */
+			background-color:red; 
+			/*border-radius: inherit; */
+			height: 100%; 
+			width: 100%; 
+		} 
+		
+		/* Align them in such a way 
+		that they form a hexagon */
+		.hexagon:before { 
+			transform: rotate(60deg); 
+		} 
+		.hexagon:after { 
+			transform: rotate(-60deg); 
+		} 
+        img
+        {
+            position: absolute;
+            transform: rotateZ(30deg);
+            clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+            top: -14.5mm;
+            left: -22mm;
+            width: 115mm;
+            height: 115mm;
+}
+        .sect2
+        {
+            position: absolute;
+            top: 20mm;
+        }
