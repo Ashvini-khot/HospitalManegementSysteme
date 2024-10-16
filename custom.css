@@ -1,0 +1,18 @@
+
+    
+            .flex-container
+            {
+             flex-direction: column;
+            }
+            .flex-container div {
+                width: 100vw;
+                background-color: aquamarine;
+            }
+            @media screen and(orientation:landscape) {
+                body {
+                    background-color: rgb(216, 73, 73);
+                    
+                }
+                
+                
+            }

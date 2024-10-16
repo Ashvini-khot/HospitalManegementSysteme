@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        @keyframes WHchanger {
+            25%
+            {
+                width: 150px;
+                height: 150px;
+                background-image:linear-gradient(blue,red,green) ;
+                transform: rotateZ(0px);
+                
+            }
+            50%
+            {
+                width: 200px;
+                height: 200px;
+                background-image: linear-gradient(white,black,gray);
+                transform: rotateZ(45deg);
+                border-radius: 40px;
+            }
+            75%
+            {
+                width: 250px;
+                height: 250px;
+                background-image: radial-gradient(yellow,orange,red);
+                transform: rotateZ(90deg);
+                border-radius: 60px;
+            }
+            100%
+            {
+                width: 300px;
+                height: 300px;
+                background-image: linear-gradient(green,blue,black);
+                transform: rotateZ(180deg);
+                border-radius: 90px;
+            }
+        
+        }
+        div.animationdiv
+        {
+            position: relative;
+            left: 300px;
+            height: 100px;
+            width: 100px;
+            background-color: chartreuse;
+            animation: WHchanger 4s ease-in-out 2s infinite alternate forwards;
+        }
+    </style>
+</head>
+<body>
+    <div class ="animationdiv"></div>
+</body>
+</html>

@@ -1,0 +1,10 @@
+
+    
+            .flex-container
+            {
+             flex-direction: column;
+            }
+            .flex-container div {
+                width: 100vw;
+                background-color: aquamarine;
+            }

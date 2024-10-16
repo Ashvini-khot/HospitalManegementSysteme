@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation Rajjo</title>
+    <style>
+        @keyframes WHchanger {
+            20%
+            {
+                
+                transform: rotateZ(0px);
+              /*  transform-origin: 100% 100%;*/
+                
+            }
+            40%
+            {
+                
+                transform: rotateZ(45deg);
+              /*  transform-origin: 100% 100%;*/
+            }
+            60%
+            {
+               
+               
+                transform: rotateZ(90deg);
+               /* transform-origin: 100% 100%;*/
+            }
+            80%
+            {
+               
+                transform: rotateZ(180deg);
+              /*  transform-origin: 100% 100%;*/
+            }
+            100%
+            {
+                transform: rotateZ(360deg);
+               /* transform-origin: 100% 100%;  */
+            }
+        
+        }
+        div.RajjoShreeRotation
+        {
+            
+            animation: WHchanger 4s ease-in-out 2s infinite alternate forwards;
+        }
+        div.RajjoShreeRotation
+        {
+            height: 200px;
+            width: 200px;
+            background-image:linear-gradient(rgb(158, 240, 26),blue, rgb(252, 22, 240));
+            border-radius: 90px;
+        }
+        div h1{
+            position: relative;
+            left: 20px;
+            top: 50px;
+            text-decoration: underline;
+            color: rgb(87, 210, 30);
+            text-shadow: red 5px 5px;
+
+        }
+        div.RajjoShreeRotation:hover
+        {
+         transform: rotateZ(45deg);
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="RajjoShreeRotation"><h1>Rajjo-Shree</h1></div>
+
+</body>
+</html>

@@ -18,19 +18,25 @@
         section.flex-container
         {
             display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
+           /* flex-direction: row;
+            flex-wrap: wrap;*/
         }
-        @media screen and (max-width:375px) and (max-height:667px)
+       /* @media screen and (max-width:375px) and (max-height:667px)
         {
             .flex-container
             {
              flex-direction: column;
             }
+            .flex-container div {
+                width: 100vw;
+                background-color: aquamarine;
+            }
             
-        }
+        }*/
+        
 
     </style>
+    <link rel="stylesheet" href="./css/custom.css" media="screen and (max-width:375px) and (max-height:667px)">
 </head>
 <body>
     <section class="flex-container">
