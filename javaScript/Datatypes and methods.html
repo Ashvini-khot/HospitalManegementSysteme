@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data types and methods</title>
+    <script>
+        //some work on strings
+        
+    var str1 = "Hello";
+    console.log(str1.charAt(0));
+    var str2 = "World";
+    console.log(str1.concat(str2));
+    console.log(str1.endsWith("o"));
+    console.log(str1.startsWith("H"));
+    console.log(str1.includes("H"));
+    console.log(str1.indexOf("H"));
+    console.log(str1.lastIndexOf("H"));
+
+
+    //Some work on number 
+   
+    var n1 =100.57897565656
+    console.log(n1.toFixed(0));
+    console.log(n1.toExponential(2));
+    console.log(parseInt(n1));
+    console.log(parseFloat(n1));
+    var n3="110";
+    console.log(parseInt(n3));
+    var n4="110.978787";
+    console.log(parseFloat(n4));
+
+
+    // Some work on date data-structure
+    var d1 = new Date();
+    console.log(d1);
+    //set
+    console.log(d1.getMonth());
+    console.log(d1.getDay());
+    console.log(d1.getHours());
+    //get
+    console.log(d1.setMonth(1));
+    console.log(d1.getMonth());
+    //creating object of date....
+    var d2 = new Date("1992-8-20");
+    console.log(d2.getMonth());
+    console.log(d2.getFullYear());
+    console.log(d2.getSeconds());
+    
+
+
+    //some work on Array Data Structure.....
+    var numbers=[1,2,3,4,5,6,7,8,9];
+    var numbers2=numbers.concat(10,11);
+    console.log(numbers2);
+    console.log(numbers2.join("*"));
+    console.log(numbers2.pop());
+    
+
+    //Some work on Sets DataStructure
+    let s1 = new Set([11,11,11,23,45,67,89,]);
+    s1.add(10);
+    s1.add(10);
+    console.log(s1);
+    console.log(s1.size);
+
+    //Maps
+    let m1= new Map();
+    m1.set("Name","Ashvini");
+    console.log(m1);
+
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
