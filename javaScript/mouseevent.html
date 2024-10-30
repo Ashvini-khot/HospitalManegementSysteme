@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //Event handler function on click event
+        function onclickeventhandler(e)
+        {
+           e.target.style.width="200px";
+           e.target.style.height="200px";
+           e.target.style.backgroundColor="black";
+           e.target.style.color="white";
+           e.target.style.borderRadius="50%"
+           e.target.style.fontSize="50px"
+        }
+  //event handler function on double clic
+  
+    function ondbclickeventhandler(e)
+    {
+        e.target.style.width="50px";
+           e.target.style.height="50px";
+           e.target.style.backgroundColor="orange";
+           e.target.style.color="black";
+           e.target.style.borderRadius="50%"
+           e.target.style.fontSize="10px"
+    }
+  
+
+    </script>
+</head>
+<body>
+    <button
+    style="height: 100px; width: 100px; background-color: aquamarine;" 
+    onclick="onclickeventhandler(event)"
+    ondblclick="ondbclickeventhandler(event)">Click Mi</button>
+</body>
+</html>

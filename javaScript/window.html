@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Window(browserobjmodel)</title>
+</head>
+<body>
+    <script>
+        FullName="Ashvini Khot";
+    </script>
+    <script>
+        function opengoogle()
+        {
+          googlewindow =  window.open("https://localhost:8090/events.html","-blank" ,"width=500px; height=500px");
+        }
+        function closegoogle()
+        {
+           // window.open("https://localhost:8090/events.html","-blank" ,"width=200px; height=200px");
+            googlewindow.close();
+            //window.close("https://localhost:8090/events.html","-blank" ,"width=500px; height=500px");
+        }
+        function Movetogoogle()
+        {
+            googlewindowow.moveTo(400,800);
+            
+        }function Resizewindow()
+        {
+            googlewindow.resizeTo(50,50);
+            
+        }
+
+    </script>
+
+
+
+
+<button type="button" onclick="opengoogle()">OpenWindow..Google</button>
+<button type="button" onclick="closegoogle()">CloseWindow</button>
+<button type="button" onclick="Movetogoogle()">Move</button>  
+<button type="button" onclick="Resizewindow()">Resizewindow</button>  
+</body>
+</html>

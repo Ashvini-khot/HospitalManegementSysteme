@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formValidation</title>
+    <script>
+        function saveData(e)
+        {
+            e.preventDefault();
+            var formdata = new FormData(e.target);//FormData is constuctor of form ,it retrive all data from form.
+            console.log(formdata.get("fname"));
+            let f=formdata.get("fname");
+            if(f.length<2)
+        {
+            //alert("Name should be more than 2 character!");
+            document.getElementById("er").style.visibility="visible";
+
+            return ;
+        }
+           
+            console.log(formdata.get("lname"));
+            //retriving data in object form
+            var obj1={}
+            formdata.forEach((single,key)=>{
+            obj1[key]=single
+            })
+            console.log(obj1)
+
+        }        
+
+    </script>
+</head>
+<body>
+    <form onsubmit="saveData(event)">
+    <div>
+    <label>Name</label>
+    <input type="text" id="fname" class="fname" name="fname" onchange="if(event.target.value.length>2){document.getElementById('er').style.visibility='hidden'}">
+    <div  id ="er" style="color: red; visibility: hidden;">Error name shoul be more than 2 chara. long</div>
+    </div>
+    <div>
+    <label>LastName</label>
+    <input type="text" id="lname" class="lname" name="lname">
+    </div>
+    <div>
+        <button type="submit">Save</button>
+    </div>
+    </form>
+</body>
+</html>

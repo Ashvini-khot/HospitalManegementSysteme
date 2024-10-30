@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+    <script>
+        //Events on mouse
+        function ClikEveHan(e)
+        {
+            console.log(e)
+            e.target.style.width="100px";
+            e.target.style.height="100px";
+        }
+
+
+        //Events on Keyboard
+       function changeeventhandl(e)
+       {
+         //console.log(e);
+         document.getElementById("Firstnamepara").innerHTML=e.target.value;
+
+       }
+         function keyupeventhandlfun(e)
+         {
+          console.log(e);
+         }
+         function keyupthandlfun(e)
+         {
+          console.log(e);
+         }
+       
+    </script>
+    
+</head>
+<body>
+    <button style=
+   "height: 50px ;
+    width: 50px;
+    background-color: blue;"
+    ondbclick="alert('ondbclickevent')"
+    onclick="ClikEveHan(event)"
+    onmouseover=""
+    onmouseout="">
+
+    </button>
+    <input type="text" id="Firstname" name="Firstname" onchange="changeeventhandl(event)"
+    style="position: absolute;
+    top:100px;
+    left: 50px;"
+    onkeydown=" keyupeventhandlfun(event)"
+    onkeyup="keyupthandlfun(event)"
+    />
+    <p id="Firstnamepara" class="para">Ashvini</p>
+    <p id="lasttnamepara" class="para">Khot</p>
+
+    <script>
+        document.getElementById("Firstnamepara").addEventListener("mouseover",function ab(e)
+    {
+        console.log(e);
+        e.target.style.fontSize="20px";
+    })
+    document.getElementById("Firstnamepara").addEventListener("mouseout",function ab(e)
+    {
+        console.log(e);
+        e.target.style.fontSize="10px";
+    })
+    document.getElementsByTagName("p")[0].style.color="red";
+    document.getElementsByTagName("p")[0].title="This is paragraph";
+    document.getElementsByClassName("para")[1].style.color="brown";
+    document.querySelector(".para").style.backgroundColor="yellow";
+    document.querySelectorAll(".para")[1].style.backgroundColor="pink";
+    let head1=document.createElement("h1");
+    head1.innerHTML="this is heading";
+    document.querySelector("body").append(head1);
+    </script>
+</body>
+</html>

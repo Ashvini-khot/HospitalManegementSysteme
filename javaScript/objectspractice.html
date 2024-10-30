@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>objects</title>
+</head>
+<script>
+    let obj1 = new Object();
+    {
+        obj1.name="Ashvini";
+        obj1.lname="Khot";
+        obj1.fun1= function()
+        {
+            return this.lname;
+        }
+    }
+    console.log(obj1.name);
+    console.log(obj1.fun1());
+    //creating second object
+    let obj2 ={name:"Ashish",lname:"Patil"}
+    console.log(obj2.name);
+
+    //Constructor Function
+    function person(n,l)
+    
+    {
+        this.name=n;
+        this.lname=l;
+
+    }
+   let obj3= new person("Rajvi","Khot");
+   console.log(obj3.name);
+
+//functions on functions
+//call function
+function fun1()
+{   
+    return this.name;
+}
+console.log(fun1.call(obj3))
+//bind function
+function fun2(g)
+{
+    return this.name+"  "+g;
+}
+let s=fun2.bind(obj3,"Hello");
+console.log(s());
+//Apply function
+function fun3(g1,g2)
+{
+    return this.name+"  "+g1;
+}
+let s1=fun3.apply(obj3,["hi","by"]);
+console.log(s1);
+
+</script>
+<body>
+    
+</body>
+</html>

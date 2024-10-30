@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to create object in different ways......</title>
+    <script>
+        let obj1 =new Object();
+        {
+           obj1.name ="Ashvini";
+           obj1.lname="Khot";
+           obj1.objfun=function()
+           {
+            return this.lname;
+           }
+
+        }
+        console.log(obj1.name);
+        console.log(obj1.objfun());
+
+
+
+        let obj2 = { name:"Shree",lname:"khot"}
+        console.log(obj2.name);
+
+        //constructor function 
+        function person(n,e)
+        {
+            this.name=n;
+            this.email=e;
+
+
+        }
+        obj3=new person("Rajvi","Rajjo@gmail");
+        console.log(obj3.name);
+
+
+        //Functions on function
+        //call
+        function GetEmail()
+        {
+          return  this.email;
+        }
+        console.log(GetEmail.call(obj3));
+        //bind
+        function getemailandbindhi(g)
+        {
+            return this.email+"  "+g;
+        }
+       let r1=getemailandbindhi.bind(obj3,"Hi");
+        console.log(r1());
+        //apply
+        function getapply(h,e)
+        {
+            return h+"  " +this.name+ "  "+e;
+        }
+        let r2=getapply.apply(obj3,["Hello","!"]);
+        console.log(r2);
+       
+        //how to define class and object
+        class Employee
+        {
+            name;
+            lastn;
+            constructor(n,l)
+            {
+                this.name=n;
+                this.lastn=l;
+            }
+
+        }
+        let e1= new Employee("swapnil","Khot");
+        console.log(e1.name);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

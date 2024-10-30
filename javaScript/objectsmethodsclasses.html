@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objectsmethodsclass</title>
+    <script>
+        //Objects....
+        //how to write objects
+        let ob1=new Object();
+        ob1.name ="Ashvini";
+        ob1.emaiil ="rileash20@Gmail.com";
+        ob1.mob="9960103836";
+        ob1.gender="Female";
+
+       // how to call object'properties using function
+       ob1.TelMeName=function()
+       {
+        
+            return this.name;
+         
+
+        }
+        console.log(ob1.name);// propertis call;ob1 this ho gaya....this.name means ob1 ka this ,obj1 ki property....
+    
+        console.log(ob1.TelMeName());//function call
+
+//second way to write object
+let obj2 = {
+    name:"Ashish",
+    email:"as@gmail.com",
+    mobile:"9960103836",
+    gender:"Female",
+    TellMeNameEmail :function()
+    {
+        return this.name+"  "+this.email;
+    }
+
+
+
+}
+console.log(obj2.TellMeNameEmail());
+
+
+
+//Constructor fuction
+function Person(n,e,m,g)
+{
+    this.name=n;
+    this.email=e;
+    this.mobile=m;
+    this.gender=g;
+    this.TellMeGende=function(){
+        return this.gender;
+
+    }
+}
+let p1= new Person("swapnil" ,"Swap2@23.com","9657456700","Male");
+console.log(p1.name);
+console.log(p1.TellMeGende());
+
+//functions on functions
+
+function GetEmail(g)
+{
+    return g+"  "+this.email;
+}
+//call function
+console.log(GetEmail.call(p1));
+//Bind Function
+ let r = GetEmail.bind(p1,"Hello");
+console.log(r());
+//apply function
+function GatName(g,e)
+{
+    return g+"  "+this.name+""+e;
+}
+let s =GatName.apply(p1,["Hello","!"]);
+console.log(s);
+//
+
+
+
+
+//Classes and Objects
+
+class Employee
+{
+    name;
+    emaiil;
+    mobile;
+    gender;
+    constructor(n,e,m,g)
+    {
+        this.name=n;
+        this.emaiil=e;
+        this.mobile=m;
+        this.gender=g;
+    }
+}
+let e1=new Employee("Rajjo","Rajjo@gmail.com","45456556","Female");
+console.log(e1.mobile);
+class CEO extends Employee
+{
+    sharepercentage
+    constructor(n,e,m,g,s)
+    {
+        super();
+        this.sharepercentage=s;
+
+    }
+
+}
+let c1 = new CEO("Shree","shree@gmai","46564","male",100);
+console.log(c1.name);
+
+
+
+//
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
