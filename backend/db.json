@@ -1,0 +1,71 @@
+{
+  "students": [
+    {
+      "id": "abc",
+      "name": "Ashvini Khot",
+      "email": "rileash@gmail.com",
+      "Hobbies": [
+        "Music",
+        "Walking"
+      ],
+      "address": {
+        "line1": "Ashram-road",
+        "line2": "Urlikanchan"
+      },
+      "subjects": [
+        {
+          "title": "maths",
+          "result": true,
+          "marks": "90"
+        }
+      ]
+    },
+    {
+      "id": "57df",
+      "name": "Rajvi Khot",
+      "email": "rajjo@gmail.com",
+      "Hobbies": [
+        "Music",
+        "Walking"
+      ],
+      "address": {
+        "line1": "Ashram-road",
+        "line2": "Urlikanchan"
+      },
+      "subjects": [
+        {
+          "title": "maths",
+          "result": true,
+          "marks": "90"
+        }
+      ]
+    }
+  ],
+  "posts": [
+    {
+      "id": "1",
+      "title": "a title",
+      "views": 100
+    },
+    {
+      "id": "2",
+      "title": "another title",
+      "views": 200
+    }
+  ],
+  "comments": [
+    {
+      "id": "1",
+      "text": "a comment about post 1",
+      "postId": "1"
+    },
+    {
+      "id": "2",
+      "text": "another comment about post 1",
+      "postId": "1"
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

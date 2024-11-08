@@ -1,0 +1,23 @@
+[{
+    "name":"Ashvini Khot",
+    "email": "rileash@gmail.com",
+    "Hobbies":["Music","Walking"],
+    "address":
+    {
+        "line1":"Ashram-road",
+        "line2":"Urlikanchan"
+    },
+    "subjects":[{"title":"maths","result":true,"marks": "90"}]
+},
+
+{
+    "name":"Swapnil Khot",
+    "email": "Swapnil@gmail.com",
+    "Hobbies":["Music","Walking"],
+    "address":
+    {
+        "line1":"Ashram-road",
+        "line2":"Urlikanchan"
+    },
+    "subjects":[{"title":"maths","result":true,"marks": "90"}]
+}]
