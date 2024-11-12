@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Use of Ternary Operator</title>
+</head>
+<body>
+    <script>
+        function checkfun(e)
+        {
+            r2=String(document.getElementById("r1").value);
+            var r3 = "yes";
+            r3==r2 ? "yes":"no";
+            console.log(r2);
+            document.getElementById("resultarea").innerHTML= " You Legaly Drive:"+r2;    
+         }
+           
+    </script>
+    <H2>Driving Liecence</H2>
+    <h3>Enter Yes or No</h3>
+    <input type="text" id ="r1" style="color: brown;">
+    <div id="ResultArea"></div>
+    <button onclick="checkfun(event)" style="width: 70px; height:30px;
+    background-color: aqua;"></button>
+    <div id="resultarea" style="color: blue; font-size: 25px;"></div>
+</body>
+</html>

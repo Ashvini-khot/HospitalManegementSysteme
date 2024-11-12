@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Days using Switch</title>
+</head>
+<body>
+    <script>
+       function check(e)
+       {
+       var v1=Number(document.getElementById("no").value);
+       console.log(v1)
+        switch(v1)
+        {
+            case 1 : console.log("Sunday");
+            document.getElementById("result-area").innerHTML="Sunday";
+            break;
+            case 2 : console.log("Monday");
+            document.getElementById("result-area").innerHTML="Monday";
+            break
+            case 3 : console.log("Tuesday");
+            document.getElementById("result-area").innerHTML="Tuesday";
+            break;
+            case 4 : console.log("Wednday");
+            document.getElementById("result-area").innerHTML="Wednday";
+            break
+            case 5 : console.log("Thirsday");
+            document.getElementById("result-area").innerHTML="Thirsday";
+            break;
+            case 6 : console.log("Friday");
+            document.getElementById("result-area").innerHTML="Friday";
+            break;
+            case 7 : console.log("Saturday");
+            document.getElementById("result-area").innerHTML="Saturday";
+            break;
+            default: console.log("valide");
+            document.getElementById("result-area").innerHTML="Invalide";
+        }
+    }
+    </script>
+    <h3>Enter Any no: from 1 to 7</h3>
+    <input type="number" id="no">
+    <div id="result-area"></div>
+    <button onclick="check(event)">check</button>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Use of named func.</title>
+</head>
+<body>
+<script>
+    function result(e)
+    {
+        num3=Number(document.getElementById("no1").value);
+        num4=Number(document.getElementById("no2").value);
+        console.log(num3);
+        console.log(num4);
+           
+
+        function sum(num3,num4)
+        { 
+            var r1= num3+num4;
+            console.log(r1);
+            document.getElementById("Resultarea").innerHTML="Sum of two no:"+r1;
+        }
+       sum(num3,num4);
+    }
+</script>
+
+
+    <h1>Use of named function.....</h1>
+    <h3>Enter inputs from user and pass them as parameters and return their sum using NamedFunction</h3>
+    <lable>Enter first No:</lable><input type="number" id="no1">
+    <lable>Enter Second No:</lable><input type="number" id="no2">
+    <div><button onclick="result(event)">Result</button></div>
+    <div id="Resultarea" style="color: blue; font-size: 20px;"></div>
+</body>
+</html>

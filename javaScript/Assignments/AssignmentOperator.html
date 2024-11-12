@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AssignmentOperator</title>
+</head>
+<script>
+    //+= operator
+    function giveresult(e)
+    {
+        var v1= Number(document.getElementById("no1").value);
+        v1+=2;
+        console.log(v1);
+        document.getElementById("resultarea").innerHTML="No. Increamented by 2 :="+v1;
+    }
+</script>
+<body>
+    <h1>Assignment Operator</h1>
+    <h3 style="color:  rgb(4, 61, 61);">+=Operator</h3>
+    <div>Enter no;<input type="number" id="no1" style="height: 30px; width: 230px; border-color: aqua;" ></div>
+    <br>
+    <div id="resultarea" style="color: blue; font-size: 20px;"></div>
+     <br>
+    <button onclick="giveresult(event)"style="width: 70px; background-color: lightblue; height: 30px;" >Result</button>
+    
+    
+    <script>
+        //-= operator
+        function result2(e)
+        {
+            var v2= Number(document.getElementById("no2").value);
+            v2-=2;
+            console.log(v2);
+            
+            document.getElementById("resultarea1").innerHTML="No. Decreamented by 2 :="+v2;
+        }
+    </script>
+    <body>
+        <h3 style="color: rgb(4, 61, 61);">-=Operator</h3>
+        <div>Enter no;<input type="number" id="no2" style="height: 30px; width: 230px; border-color: aqua;" ></div>
+        <br>
+        <div id="resultarea1" style="color: blue; font-size: 20px;"></div>
+         <br>
+        <button onclick="result2(event)"style="width: 70px; background-color: lightblue; height: 30px;" >Result</button>
+    
+</body>
+</html>

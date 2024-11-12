@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LogicalOperator</title>
+</head>
+<script>
+    function checkfunc(e)
+    {
+        var g=String(document.getElementById("gender").value);
+        var a=Number(document.getElementById("age").value);
+       
+
+        var r =(g=="Female") && (a>18);
+      document.getElementById("ResultArea").innerHTML="Result: "+r;
+    }
+</script>
+<body>
+    <h1>Logical-Operator</h1>
+    || Logical OR .....any one condtion is true return true....
+    && Logical And.....both conditions true return true.....
+    ! Logical Not.....Oposit conditions
+    <br>
+    
+    <div style="color: rgb(209, 23, 200);">Enter Gender And Age.....for MissWorld Compitition age must be 18+ and gender is Female...Using And Operator</div>
+    <div><lable>Gender:</lable>
+        <input type="text" id="gender" style="height: 30px; width: 230px; border-color: aqua;"></div>
+
+
+ <div><lable>Age:</lable>
+        <input type="number" id="age" style="height: 30px; width: 230px; border-color: aqua; position: absolute;
+    left: 64px;"></div>
+    <br>
+
+    <div><button  onclick="checkfunc(event)"  style="width: 40px; background-color: lightblue; height: 30px;"  ></button></div>
+
+    <div><h1 id="ResultArea">ResultArea</h1></div>
+
+
+
+
+    <!--Or operator-->
+
+    <script>
+    function checkfunc1(e)
+    {
+        var g1=String(document.getElementById("gender1").value);
+        var a1=String(document.getElementById("gender2").value);
+       
+
+        var r1 =(g1=="Female") || (a1=="Male");
+      document.getElementById("ResultArea1").innerHTML="Result: "+r1;
+    }
+    </script>
+    <br>
+    
+    <div style="color: rgb(209, 23, 200);">Enter info.....for Running Compitition anyone male or female apply...Using Or Operator</div>
+    <div><lable>Female:</lable>
+        <input type="text" id="gender1" style="height: 30px; width: 230px; border-color: aqua;"></div>
+
+
+ <div><lable>Male:</lable>
+    <input type="text" id="gender2" style="height: 30px; width: 230px; border-color: aqua;"></div>
+    <br>
+
+    <div><button  onclick="checkfunc1(event)"  style="width: 40px; background-color: lightblue; height: 30px;"  ></button></div>
+
+    <div><h1 id="ResultArea1">ResultArea</h1></div>
+
+
+   <!--Not operator
+
+   <script>
+    function checkfunc2(e)
+    {
+        var g2=String(document.getElementById("gender3").value);
+        var a2=String(document.getElementById("gender4").value);
+       
+
+        var r2 =!(g2==a2);
+      document.getElementById("ResultArea2").innerHTML="Result: "+r2;
+    }
+    </script>
+    <br>
+    
+    <div style="color: rgb(209, 23, 200);">Male And female Apposite gender using not operator</div>
+    <div><lable>Female:</lable>
+        <input type="text" id="gender3" style="height: 30px; width: 230px; border-color: aqua;"></div>
+
+
+ <div><lable>Male:</lable>
+    <input type="text" id="gender4" style="height: 30px; width: 230px; border-color: aqua;"></div>
+    <br>
+
+    <div><button  onclick="checkfunc2(event)"  style="width: 40px; background-color: lightblue; height: 30px;"  ></button></div>
+
+    <div><h1 id="ResultArea2">ResultArea</h1></div>-->
+ 
+
+</body>
+</html>
