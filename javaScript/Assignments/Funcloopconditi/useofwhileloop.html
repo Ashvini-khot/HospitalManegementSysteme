@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating timer using while loop</title>
+</head>
+<body>
+    <script>
+        var Time=Math.floor((Math.random()*1500000)+500000);
+        console.log(Time/100000);
+        while(Time>=0)
+    {
+        if(Time==0)
+    {
+        console.log("DON");
+        document.getElementById("timer").innerHTML ="Done";
+    }
+    Time--;
+    }
+    </script>
+    <h1>Timer using while loop</h1>
+    <div id ="timer"></div>
+</body>
+</html>
