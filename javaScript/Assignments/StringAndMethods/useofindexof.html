@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Use of Indexof() func</title>
+</head>
+<body>
+    <script>
+        function findindex(e)
+        {
+        let st1=document.getElementById("mainst").value; 
+        let subtext=document.getElementById("subtext").value;
+        console.log(st1.indexOf(subtext));
+        document.getElementById("substring").innerHTML=st1.indexOf(subtext);
+        }
+    </script>
+    <h1>Return index of First Occurence.....</h1>
+   <div><lable>Enter Main String</lable><input type="text"id="mainst"></div>
+    <div><lable>Enter Index</lable><input type="text" id="subtext"></div>
+    <div><button onclick="findindex(event)">FindIndexofsubString</button></div>
+    <div id="substring"></div>
+</body>
+</html>
