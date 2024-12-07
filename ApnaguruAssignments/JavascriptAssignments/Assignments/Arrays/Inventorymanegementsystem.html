@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InventoryManegementSystem</title>
+</head>
+<body>
+  <h1>Inventory Manegement System</h1>
+    <script>
+        function addproducts(e)
+        {
+       //Declaring array propertis
+       const products=[];
+       let text="";
+       id1=document.getElementById("id").value;
+       name1=document.getElementById("name").value;
+       category1=document.getElementById("category").value;
+       price1=document.getElementById("price").value;
+       let myobject={id:id1,name:name1,category:category1,price:price1};
+       products.push(myobject);
+       console.log(products);
+       console.log(id1);
+       products.forEach(single=>
+            {
+                let tr =document.createElement("tr");
+                let td1 =document.createElement("td");
+                td1.innerHTML=single.id;
+                let td2 =document.createElement("td");
+                td2.innerHTML=single.name;
+                tr.appendChild(td1);
+                tr.appendChild(td2);
+              //  document.getElementById("info").appendChild(tr);
+              document.write(td1);
+            }
+               )
+        }
+          
+        
+      
+        
+   </script>
+   
+
+<div ><lable>Id:</lable><input type="number" id="id" style="position: absolute; left: 70px;" ></div>
+<div><lable>Name:</lable><input type="text" id="name" style="position: absolute; left: 70px;"></div>
+<div><lable>Catagery:</lable><input type="text" id="category" style="position: absolute; left: 70px;"></div>
+<div><lable>Price:</lable><input type="number" id="price" style="position: absolute; left: 70px;"></div>
+<div><button onclick="addproducts(event)">Add-Records</button></div>
+
+
+  <tr>
+  <th>
+ Id:
+  </th>
+  <th>
+ Name:
+  </th>
+  <th>
+    category:
+     </th>
+    
+     <th>
+      Price:
+     </th>
+     <th>
+      Delete:
+     </th>
+    
+     <th>
+      Update:
+     </th>
+  </tr>
+  <tbody id="info">
+
+  </tbody>
+  <!--
+
+   fetch("http://localhost:3000/students").then((data)=>
+    {
+        data.json().then(jsonData=>
+            {
+                console.log(jsonData);
+               
+            }
+        )
+    }).catch((error)=>
+    {
+        console.log(error);
+    })
+  -->
+</body> 
+</html> 
+    

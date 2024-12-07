@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyTableLogic</title>
+</head>
+<script>
+    function adddata()
+    {
+        myname=document.getElementById("name").value;
+       mymob=document.getElementById("mob").value;
+        
+        var tr=document.createElement('tr');
+       var td1= tr.appendChild(document.createElement('td'));
+       var td2=tr.appendChild(document.createElement('td'));
+       td1.innerHTML=myname;
+       td2.innerHTML=mymob;
+      
+       document.getElementById('resultarea').appendChild(tr);
+
+    }
+</script>
+<body>
+    <form method="post" name="formcontent"></form>
+    <input type ="text" name="name" id="name">
+    <input type="number" name="mob" id="mob">
+    <input type="button" onclick="adddata()" name="Add" value="AddData"> 
+
+</body>
+
+<table border="2px" id="resultarea">
+    <tr>
+        <th>Name:</th>
+        <th>MobileNo:</th>
+    </tr>
+    <tbody >
+
+    </tbody>
+</table>
+</html>

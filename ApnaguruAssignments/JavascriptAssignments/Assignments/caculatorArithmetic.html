@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<body>
+<script>
+    //Addition,Substaction,Multiplication,Division
+    function Addition(e)
+    {
+        var a=Number(document.getElementById("no1").value);
+        var b=Number(document.getElementById("no2").value);
+        var c;
+        c = a  + b;
+        console.log(c);
+      document.getElementById("ResultArea").innerHTML="Result: "+c;
+    }
+
+
+    function Substraction(e)
+    {
+        var a=Number(document.getElementById("no1").value);
+        var b=Number(document.getElementById("no2").value);
+        var c;
+        c = a  - b;
+        console.log(c);
+        document.getElementById("ResultArea").innerHTML="Result: "+c;
+    }
+
+
+    function Multiplication(e)
+    {
+        var a=Number(document.getElementById("no1").value);
+        var b=Number(document.getElementById("no2").value);
+        var c;
+        c = a  * b;
+        console.log(c);
+        document.getElementById("ResultArea").innerHTML="Result: "+c;
+    }
+
+    function Division(e)
+    {
+        var a=Number(document.getElementById("no1").value);
+        var b=Number(document.getElementById("no2").value);
+        var c;
+        c = a  / b;
+        console.log(c);
+        document.getElementById("ResultArea").innerHTML="Result: "+c;
+    }
+</script>
+
+
+
+
+    <h1 style="position: absolute;
+    top: 5%;
+    left: 30%;
+    color: black;
+    font-size: 35pt;">Calculator</h1>
+    <br>
+    <br>
+    <section style="position: absolute;
+    top: 20%;
+    left: 30%;">
+   
+   <!--Users input in text-->
+        <input type="number" id="no1" class="no1"  style="height: 30px; width: 230px; border-color: aqua;"><br><br>
+   
+    
+        <input type="number" id="no2" class="no2" style="height: 30px; width: 230px; border-color: aqua; " ><br><br>
+      
+        <button onclick="Addition(event)"  style="width: 40px; background-color: lightblue;">+</button> 
+    
+        <button onclick="Substraction(event)" style="width: 40px; background-color: lightblue;" >-</button>
+    
+        <button onclick="Multiplication(event)" style="width: 40px; background-color: lightblue;">*</button>
+    
+        <button onclick="Division(event)" style="width: 40px; background-color: lightblue;" >/</button>
+
+        <!--<button style="width: 40px; background-color: lightblue;" >=</button>-->
+
+    </section>
+    <!--Output-->
+    <section style="position: absolute; top: 40%; left: 30%;">
+        <h1 id="ResultArea"> Result</h1>
+       <!-- <input type="number" id="result"  style="height: 30px; width: 230px; border-color: aqua; ">-->
+
+    </section>
+</body>
+</html>

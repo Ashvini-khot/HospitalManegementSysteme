@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Use of Indexof() func</title>
+</head>
+<body>
+    <script>
+        function uppercasefunc(e)
+        {
+        let st1=document.getElementById("mainst").value; 
+       
+        console.log(st1.toUpperCase());
+        document.getElementById("result").innerHTML=st1.toUpperCase();
+        }
+    </script>
+    <h1>To Upper case.....</h1>
+   <div><lable>Enter String</lable><input type="text"id="mainst"></div>
+   
+    <div><button onclick="uppercasefunc(event)">UpperCase</button></div>
+    <div id="result"></div>
+
+
+
+    <script>
+        function lowercasefunc(e)
+        {
+        let st2=document.getElementById("mainst2").value; 
+       
+        console.log(st2.toLowerCase());
+        document.getElementById("result2").innerHTML=st2.toLowerCase();
+        }
+    </script>
+    <h1>To Lower case.....</h1>
+   <div><lable>Enter String</lable><input type="text"id="mainst2"></div>
+   
+    <div><button onclick="lowercasefunc(event)">LowerCase</button></div>
+    <div id="result2"></div>
+</body>
+</html>

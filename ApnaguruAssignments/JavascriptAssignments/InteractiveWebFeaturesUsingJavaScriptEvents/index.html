@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EventsAssignment</title>
+    <script>
+        //mouseevents
+        function changecolorevent(e)
+
+        {  
+             e.target.style.backgroundColor="blue";//this is code for change colour of button when mouse over event hapeens
+            
+        }
+
+        function onmouseoutevent(e)
+        {
+            e.target.style.backgroundColor="cornflowerblue";//back to origenal colour
+        }
+
+        function onclickeventhandl(e)
+        {
+          console.log("hey buttun is clicked....")//click event on console
+        }
+
+
+
+
+        //keybord events
+       function keypresseventhandler(e)
+       {
+        var i=document.getElementById("countchar");
+        var textvar =document.getElementById("textid").value;
+        console.log(textvar.length);
+        document.getElementById("countchar").innerHTML=textvar.length;
+       }
+       function enterKeyPressed(e) {
+        var i=document.getElementById("countchar");
+        var textvar =document.getElementById("textid").value;
+      if (e.keyCode == 13) {
+         console.log(textvar);
+        
+       tr1= document.createElement('tr');
+        td1=document.createElement('td');
+        td1.innerHTML=textvar;
+        tr1.appendChild(td1);
+        document.getElementById("resultlist").appendChild(tr1);
+         return true;
+      } else {
+         return false;
+      }
+   }
+   function onfocuseventhandfunc(e)
+   {
+    e.target.style.borderColor="red";
+   }
+    </script>
+</head>
+<body>
+    <header></header>
+    <main>
+    <h4>Hello i am button .....i change my colour when over event fired.....</h4>
+    <button onmouseover="changecolorevent(event)" style="height: 70px; width: 150px; background-color: cornflowerblue;" onmouseout="onmouseoutevent(event)" onclick="onclickeventhandl(event)">ChangeColour</button>
+    <div>
+        <h4>Hello i am counter to count no. of characters in input field....</h4>
+        
+    <input type="text" onkeydown="keypresseventhandler(event)" id="textid" onkeypress="enterKeyPressed(event)" onfocus="onfocuseventhandfunc(event)">
+    </div>
+    <div id="countchar"></div>
+    <table id="resultlist">
+   
+
+    </table>
+    </main>
+    <footer>
+
+    </footer>
+    
+</body>
+</html>

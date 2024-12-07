@@ -8,7 +8,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js",
   
-    "learn-fs":"node learn-fs.js"
+    "learn-fs":"node learn-fs.js",
+    "start-server":"node index1.js"
   },
   "keywords": [
     "Backend",

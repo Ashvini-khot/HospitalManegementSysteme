@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>If-elseStatement</title>
+</head>
+<body>
+    <script>
+     var ag =  prompt("Enter Age:");
+       function checkfunc(e)
+       {
+       
+       console.log(ag);
+       if(ag>18)
+       {
+        console.log("Older");
+        document.getElementById("ResultArea").innerHTML="Person is 18+";
+       }
+       else
+       {
+        console.log("Not Older");
+        document.getElementById("ResultArea").innerHTML="Person is Under 18";
+       }
+       }
+     </script>
+    <h1>Use of ifelse statement</h1>
+    <button onclick="checkfunc(event)">Chech</button>
+    <div id="ResultArea"></div>
+</body>
+</html>

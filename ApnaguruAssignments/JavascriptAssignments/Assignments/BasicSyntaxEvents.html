@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BasicSyntaxAndEventHandling</title>
+</head>
+<body>
+    <!--Changing color of webpage-->
+<script>
+    function Over(e)
+    {
+        document.body.style.background="pink";
+    }
+    
+</script>
+
+
+    <h1 onmouseover="Over(event)" 
+    style="position: absolute;
+    top: 10px;
+    left: 10px;
+    color: blue;
+
+    ">Change Color of web page</h1>
+
+
+<!--input and output-->
+<script>
+    
+    function saveData(e)
+        {
+            e.preventDefault();
+            var formdata = new FormData(e.target);//FormData is constuctor of form ,it retrive all data from form.
+            console.log(formdata.get("fname"));
+            let f=formdata.get("fname");
+            if(f.length<2)
+        {
+            //alert("Name should be more than 2 character!");
+            document.getElementById("er").style.visibility="visible";
+
+            return ;
+        }
+           
+          
+
+        }  
+       
+        function processform(e)
+
+    {    
+       var f1=document.getElementById("fname").value;
+       if(f1.length>2)
+       {
+        alert("name Entered");
+       }
+      else{
+        alert("name not Entered");
+      }
+      
+    }
+       
+            
+        
+</script>
+<form style="position: absolute; top: 100px;"onsubmit="saveData(event)" >
+<h1> Input Outout</h1>
+<div>
+    <label>Name</label>
+    <input type="text" id="fname" class="fname" name="fname" onchange="if(event.target.value.length>2){document.getElementById('er').style.visibility='hidden'}">
+    <div  id ="er" style="color: red; visibility: hidden;">Error name shoul be more than 2 chara. long</div>
+    </div>
+  <div><button onclick="processform(event)" name="submit" id="submit">submit</button></div>
+  </form> 
+
+
+
+  <!--Given no. is Even or not
+  <script>
+    const no=prompt("enter no: ");
+    if(no%2==0)
+  {
+    alert("Even no.");
+  }
+  else
+  {
+    alert("Odd no");
+  }
+
+  
+  </script>-->
+  <section style="position: absolute; top:250px" >
+  <h1>Enter Any no:</h1>
+  <input type="number" id="no1"  class="no1">
+  <p id="result"></p>
+<button onclick="evenodd(event)">check</button>
+<script>
+   
+function evenodd(e)
+{
+if((no1).value%2==0)
+  {
+    result.innerHTML="Even";
+   
+  }
+  else
+  {
+    result.innerHTML="Odd";
+  }
+}
+  </script>
+  </section>
+</body>
+</html>
