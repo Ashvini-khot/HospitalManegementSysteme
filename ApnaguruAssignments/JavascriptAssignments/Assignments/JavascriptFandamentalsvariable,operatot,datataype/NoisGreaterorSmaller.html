@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> First Number is Greater or smaller </title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+<script>
+    function checkfunc(e)
+    {
+     no3=document.getElementById("no1").value;
+     console.log(no3);
+     no4=document.getElementById("no2").value;
+     console.log(no4);
+     if(no3>no4)
+     {
+        console.log("First no is Greater");
+        document.getElementById("ResultArea").innerHTML="First No. is Greater";
+
+     }
+     else if(no3<no4)
+     {
+        console.log("Second no is greater");
+        document.getElementById("ResultArea").innerHTML="Seecond No. is Greater";
+
+     }
+     else if(no3==no4)
+     {
+        console.log("Similar no.s");
+        document.getElementById("ResultArea").innerHTML="Same Same Numbers";
+
+     }
+    }
+</script>
+
+
+
+
+    <h1>No. Is Greater Or Smaller.....</h1>
+    <div>
+    <label>Enter first No:</label>
+    <input type="number" id="no1">
+    </div>
+    <div>
+        <label>Enter Second No:</label>
+        <input type="number" id="no2">
+        </div>
+        <button onclick="checkfunc(event)">Check</button>
+        <div id="ResultArea"></div>
+</body>
+</html>

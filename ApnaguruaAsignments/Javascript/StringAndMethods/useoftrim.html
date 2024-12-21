@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Use of Indexof() func</title>
+</head>
+<body>
+    <script>
+        function trimfunc(e)
+        {
+        let st1=document.getElementById("mainst").value; 
+       
+        console.log(st1.trim());
+        document.getElementById("result").innerHTML=st1.trim();
+        }
+    </script>
+    <h1>Use of Trim</h1>
+   <div><lable>Enter String</lable><input type="text"id="mainst"></div>
+   
+    <div><button onclick="trimfunc(event)">Trim</button></div>
+    <div id="result"></div>
+
+
+
+  
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Use of splite() func</title>
+</head>
+<body>
+    <script>
+        function splitefunc(e)
+        {
+        let st1=document.getElementById("mainst").value; 
+        let spliteitem=document.getElementById("splite").value;
+        console.log(st1.split(spliteitem));
+        document.getElementById("splite-result").innerHTML=st1.split(spliteitem);
+        }
+    </script>
+    <h1>Use of splite() methode</h1>
+   <div><lable>Enter Main String</lable><input type="text"id="mainst"></div>
+    <div><lable>Enter splite seperator</lable><input type="" id="splite"></div>
+    <div><button onclick="splitefunc(event)">SplitString</button></div>
+    <div id="splite-result"></div>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="task.css" rel="stylesheet">
+</head>
+<body>
+
+
+<div class="container">
+
+<h1>Task Maneger</h1>
+<div>
+    <input type="text" id="enteredtask" placeholder="Enter-Task"><button onclick="entertask()">Add</button>
+   <ol id="tasklist"></ol>
+</div>
+
+    
+</body>
+<script>
+    
+    function entertask()
+    {
+ 
+        var task=document.getElementById("enteredtask").value.trim();
+        if(task=="")
+       {
+        alert("Enter Task");
+       }
+       else
+       {
+        var li1=document.createElement('li');
+        var ol1=document.getElementById("tasklist");
+       
+        ol1.appendChild(li1);
+        li1.innerHTML=`${task}<button id="innerbutton">X</button>`;
+        task.value="";
+        li1.querySelector("button").addEventListener("click",remove);
+        function remove()
+        {
+            li1.remove();
+        }
+      
+       
+       }
+
+    }
+
+
+
+</script>
+
+</html>

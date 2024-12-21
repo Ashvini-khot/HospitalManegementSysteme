@@ -1,0 +1,53 @@
+body
+{
+    background-color: rgb(1, 15, 15);
+}
+.container
+{
+    width: 360px;
+    padding: 33px;
+    text-align: center;
+    background-color: aliceblue;
+    margin-left: 33%;
+}
+input
+{
+    width: 270px;
+    padding: 8px;
+    border: 2px solid aqua;
+    outline: none;
+}
+button {
+    background-color: black;
+    color: azure;
+    width: 50px;
+    position: relative;
+    top: 1px;
+    height: 40px;
+    cursor: pointer;
+}
+#enteredtask
+{
+   text-transform: capitalize; 
+}
+#innerbutton {
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    position: relative;
+    right: -120px;
+    background-color: red;
+    /* text-align: center; */
+    border: 2px solid;
+    cursor: pointer;
+}
+li {
+    text-transform: capitalize;
+    color: aqua;
+    background-color: black;
+    height: 25px;
+    border-radius: 10px;
+    position: relative;
+    left: -20px;
+    margin: 2px;
+}

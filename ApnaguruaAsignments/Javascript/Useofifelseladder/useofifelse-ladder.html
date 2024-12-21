@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Use of ifelse ladder</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <script>
+        function checkfunc(e)
+        {
+          var scor=  document.getElementById("score").value;
+          
+          console.log(scor);
+          if(scor>75)
+          {
+            console.log("A");
+            document.getElementById("resultarea").innerHTML="A";
+          }
+          else if(scor<75 && scor>=55)
+          {
+            console.log("B");
+            document.getElementById("resultarea").innerHTML="B";
+          }
+          else if((scor<55) && (scor>=45))
+          {
+            console.log("C");
+            document.getElementById("resultarea").innerHTML="C";
+          }
+          else if((scor<44 )&& (scor>36))
+          {
+            console.log("D");
+            document.getElementById("resultarea").innerHTML="D";
+          }
+          else if(scor<35)
+          {
+            console.log("F");
+            document.getElementById("resultarea").innerHTML="F";
+          }
+        }
+    </script>
+
+    
+    <h3>Enter Numeric value for checking Grade:</h3>
+    <lable>Scor:</lable><input type="number" id="score">
+    <button onclick="checkfunc(event)">Check</button>
+    <div id="resultarea"></div>
+</body>
+</html>

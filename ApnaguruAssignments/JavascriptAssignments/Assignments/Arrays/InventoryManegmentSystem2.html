@@ -22,7 +22,7 @@ function Insert_Data() {
   products.forEach(x=>{
      tr+='<tr id="row">';
      tr+='<td id ="mid">'+x.id+'</td>'+'<td>'+x.name+'</td>'+'<td>'+x.category+'</td>'+'<td>'+x.price+'</td>'+
-     '<td>'+'<button onclick="editData(this)">Update</button>'+'</td>'+'<td>'+'<button>Delete</button>'+'</td>'
+     '<td>'+'<button onclick="editData(this)">Update</button>'+'</td>'+'<td>'+'<button onclick="delete_Data()">Delete</button>'+'</td>'
      
       tr+='</tr>'
      table.innerHTML+=tr;
@@ -38,49 +38,18 @@ function delete_Data()
  
 }
 
-function editData(button) {
-
-// Get the parent row of the clicked button
-let row = button.parentNode.parentNode;
-
-// Get the cells within the row
-let idcell = row.cells[0];
-let namecell = row.cells[1];
-let categorycell = row.cells[2];
-let pricecell = row.cells[3];
-
-// Prompt the user to enter updated values
-let idInput =
-    prompt("Enter the updated id:",
-        idcell.innerHTML);
-let nameInput =
-    prompt("Enter the updated name:",
-        namecell.innerHTML);
-let categoryInput =
-    prompt("Enter the updated category:",
-        categorycell.innerHTML); 
-
-let priceInput =
-    prompt("Enter the updated price:",
-        pricecell.innerHTML
-    );
-
-// Update the cell contents with the new values
-idcell.innerHTML = id;
-namecell.innerHTML = name;
-categorycell.innerHTML = category;
-pricecell.innerHTML = price;
-}
 
 
 
 </script>
+<div id="invtdiv">
 <h1>Inventory Manegement System</h1>
-<div><lable>Id:</lable><input type ="number" id="id"></div>
-<div><lable>Name:<input type ="text" id="name"></div>
-<div><lable>Category:</lable><input type ="text" id="category"><div>
-<div><lable>Price:</lable><input type ="number" id="price"></div>
-<div><button onclick="Insert_Data()">Insert-Data</button> </div>
+<lable>Id:</lable><input type ="number" id="id">
+<lable>Name:<input type ="text" id="name">
+<lable>Category:</lable><input type ="text" id="category">
+<lable>Price:</lable><input type ="number" id="price">
+<button onclick="Insert_Data()">Insert-Data</button> </div>
+</div>
 
 
 <!--Table-->

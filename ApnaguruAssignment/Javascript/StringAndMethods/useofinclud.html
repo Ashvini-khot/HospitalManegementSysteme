@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presence of String using include methode</title>
+</head>
+<body>
+    <script>
+        function find(e)
+        {
+        let st1=document.getElementById("mainst").value; 
+        let st2=document.getElementById("subst").value;
+        console.log(st1.includes(st2));
+        document.getElementById("substring").innerHTML=st1.includes(st2);
+        }
+    </script>
+    <h1>Cheack wether Substing present in Main String</h1>
+   <div><lable>Enter Main String</lable><input type="text"id="mainst"></div>
+    <div><lable>Enter Sub String</lable><input type="text" id="subst"></div>
+    <div><button onclick="find(event)">FindsubString</button></div>
+    <div id="substring"></div>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <script>
+    function multiplication()
+    {
+    
+ 
+ 
+    var i,j; 
+    for(i=1;i<=10;i++)
+    {
+       for(j=1;j<=10;j++)
+       {
+        r1=i*j;
+        
+       tbody=document.getElementById("resultarea");
+       tr=document.createElement("tr");
+        td=document.createElement('td');
+        tbody.appendChild(tr);
+        tr.appendChild(td);
+        td.innerHTML=r1;
+       
+        
+       }
+       
+    }
+} 
+   </script>
+</head>
+<body>
+   
+   <button onclick="multiplication()">1to10Tb</button>
+   <table border="2">
+    <tbody id="resultarea">
+    </tbody>   
+   </table>
+</body>
+</html>

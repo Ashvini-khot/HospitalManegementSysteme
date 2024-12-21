@@ -1,0 +1,29 @@
+
+h1{
+   
+    position: relative;
+
+    text-decoration: underline;
+}
+form
+{
+    color: aqua;
+    background-color: black;
+    width: 350px;
+    position: fixed;
+    left: 35%;
+}
+input{
+    position: relative;
+    left: 25%;
+    border-radius: 20px;
+    height: 30px;
+    border: 4px solid aqua;
+    margin: 2px;
+}
+#btn{
+
+    background-color: aqua;
+    position: relative;
+    color: black;
+}

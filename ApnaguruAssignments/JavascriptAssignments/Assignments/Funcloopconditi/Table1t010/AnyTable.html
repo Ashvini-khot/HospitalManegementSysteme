@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <script>
+    function multiplication()
+    {
+    
+  var getdata=document.getElementById("number").value;
+  var putdata=document.getElementById("result");
+    var i,temp; 
+    for(i=1;i<=10;i++)
+    {
+        r1=getdata*i
+       document.getElementById("result").innerHTML+=r1+'<br>';
+    }
+    }
+   </script>
+</head>
+<body>
+   <h1>Enter Any no:</h1>
+   <input type="number" id="number">
+   <button onclick="multiplication()">Submite</button><br>
+   <div id="result"></div>
+</body>
+</html>

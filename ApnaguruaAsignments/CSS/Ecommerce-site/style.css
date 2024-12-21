@@ -1,0 +1,91 @@
+body {
+    background-image: linear-gradient(182deg, rgb(240, 82, 109), transparent);
+    background-repeat: no-repeat;
+    height: 100vh;
+   
+
+}
+
+h1 {
+    color: #e81ee9;
+    font-size: 80px;
+    position: relative;
+    left: 160px;
+    font-style: italic;
+    text-decoration: underline;
+    text-shadow: -5px -20px 20px #9C27B0;
+    background: white;
+    border-radius: 20 px solide aqua;
+    border-radius: 20px;
+    width: 800px;
+    word-spacing: 10px;
+    text-align: center;
+}
+
+section {
+    display: flex;
+    position: relative;
+    left: 100px;
+}
+section div{
+    height: 370px;
+    width: 250px;
+    background-color: floralwhite;
+    margin: 20px;
+     border-radius: 10px;
+     position: relative;
+     left: 30px;
+    /* transition: transform .2s; /* Animation */
+    
+}
+img
+{
+    height: 200px;
+    width: 200px;
+}
+section div:hover {
+ transform: scale(1.2);
+}
+h4 {
+    color: deeppink;
+    font-style: italic;
+    position: relative;
+    left: 90px;
+    font-size: large;
+}
+h2
+{
+    color: hotpink;
+}
+p
+{
+    font-style: italic;
+    font-weight: 100;
+    margin: 10px;
+    font-size: 10px;
+}
+button{
+
+background-image: linear-gradient(45deg, #E91E63, transparent);
+    border: deeppink;
+    border-radius: 10px;
+    position: relative;
+    left: 80px;
+    top: -20px;
+}
+button:hover
+{
+    transform: skew(183deg, 7deg);
+    width: 120px;
+    height: 30px;
+    position: relative;
+    left: 30px;
+}
+h2:hover{
+    color: deeppink;
+    font-style: italic;
+    position: relative;
+    left: 90px;
+    font-size: large;
+
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Flexibility</title>
+</head>
+<body>
+    <script>
+        //Checking   flexibility of string..."",'',``
+        function cheack(e)
+        {
+        let name ="Ashvini";
+         let singlequatstring='Hello World!';
+         let doublequatstring="Hello World!";
+         let templateliteral=`Hello,${name}!`;
+       console.log(singlequatstring);
+       document.getElementById("doublqut").innerHTML=singlequatstring;
+       console.log(doublequatstring);
+       document.getElementById("singlequt").innerHTML=doublequatstring;
+       console.log(templateliteral);
+       document.getElementById("tample").innerHTML= templateliteral;
+
+        }
+
+    </script>
+</body>
+<h3>Flexibility of string using..."",'',``....</h3>
+<div id="doublqut"></div>
+<div id="singlequt"></div>
+<div id="tample"></div>
+<div><button onclick="cheack(event)">check</button></div>
+</html>

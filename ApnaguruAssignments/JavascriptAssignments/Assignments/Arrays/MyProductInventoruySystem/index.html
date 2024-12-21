@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProductInventorySystem</title>
+</head>
+<body>
+    <script>
+        
+    </script>
+
+    <script>
+        function insert()
+        {
+            let product=[];
+            productid=document.getElementById("id").value;
+            productname=document.getElementById("name").value;
+            productprice=document.getElementById("price").value;
+            productcategory=document.getElementById("category").value;
+            productqwantity=document.getElementById("quantity").value;
+            var tr=document.createElement('tr');
+            var td=tr.appendChild(document.createElement('td'));
+            td.innerHTML= productid;
+            var td1=tr.appendChild(document.createElement('td'));
+            td1.innerHTML=productname;
+            var td2=tr.appendChild(document.createElement('td'));
+            td2.innerHTML=productprice;
+            var td3=tr.appendChild(document.createElement('td'));
+            td3.innerHTML=productcategory;
+            var td4=tr.appendChild(document.createElement('td'));
+            td4.innerHTML=productqwantity;
+            var td5=tr.appendChild(document.createElement('td'));
+             td5.innerHTML='<button>Delete</button>';
+            document.getElementById('result').appendChild(tr);
+            product.push(productid,productname,productprice,productcategory,productqwantity);
+           console.log(product.forEach(x=>{x.productid,x.productname,x.productprice,x.productcategory,x.productqwantity}));
+     
+            
+         
+
+
+
+            
+            
+           
+        }
+    </script>
+    <script> 
+    
+    </script>
+
+
+
+<h1>ProductInventorySystem</h1>
+<div>
+   Id<input type="number" id="id">
+   Name <input type="text" id="name">
+   Price <input type="number" id="price">
+   Category<input type="text" id="category">
+   Qwantity<input type="number" id="quantity">
+    <button onclick="insert()">AddData</button>
+    
+    </div>
+
+<table border="2">
+    <th>
+        Id
+    </th>
+    <th>
+     productname
+    </th>
+    <th>
+      Price  
+    </th>
+    <th>
+        Category
+    </th>
+    <th>
+        Quantity
+    </th>
+    <tbody id="result"></tbody>
+
+</table>
+    
+<table>
+    <tbody id="datas">
+
+    </tbody>
+</table>
+</body>
+
+</html>

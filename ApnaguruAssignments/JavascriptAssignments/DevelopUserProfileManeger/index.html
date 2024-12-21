@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+    let Userprofile = {
+    name:"Ashvini",
+    age:"30",
+    email:"as@gmail.com",
+    mobile:"9960103836",
+    gender:"Female",
+    address:"Urlikanchan",
+    TellMeNameEmail :function()
+    {
+        return this.name+"  "+this.email+" "+this.mobile+" "+this.gender+""+this.address;
+    }
+
+    
+
+}
+function changeemail(param1)
+{
+
+    Userprofile.email=param1;
+    return Userprofile;
+}
+
+
+function Updateaddress(param1)
+{
+  
+    Userprofile.address=param1;
+    return Userprofile;
+}
+function checkage(age1)
+{
+    if(age1>=18)
+{
+    console.log("+18");
+}
+Userprofile.age=age1;
+return Userprofile;
+     
+}
+console.log(Userprofile.TellMeNameEmail());
+console.log(changeemail("R.com"));
+console.log(Updateaddress("Sangli"));
+console.log(checkage(50));
+   </script>
+</body>
+<h3>Cheak console</h3>
+</html>

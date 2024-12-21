@@ -1,0 +1,83 @@
+<script >
+ 
+
+//Insert data function
+function Insert_Data() {
+    const products=[];
+       let text="";
+       id=document.getElementById("id").value;
+       name=document.getElementById("name").value;
+       category=document.getElementById("category").value;
+       price=document.getElementById("price").value;
+       let myobject={id,name,category,price};
+
+       products.push(myobject);
+       console.log(products);
+      
+
+
+
+
+  var table = document.getElementById("datas");
+
+  var tr="";
+  products.forEach(x=>{
+     tr+='<tr id="row">';
+     tr+='<td id ="mid">'+x.id+'</td>'+'<td>'+x.name+'</td>'+'<td>'+x.category+'</td>'+'<td>'+x.price+'</td>'+
+     '<td>'+'<button onclick="editData()">Update</button>'+'</td>'+'<td>'+'<button onclick="delete_Data()">Delete</button>'+'</td>'+'<td>'+'<button onclick="update-Data()">Update</button>'+'</td>'
+     
+      tr+='</tr>'
+     table.innerHTML+=tr;
+  })
+  
+  
+}
+
+function delete_Data()
+{
+ document.getElementById("row").remove();
+
+ 
+}
+function editData()
+{
+    products=products.map(r=>{if(r.hasOwnProperty("name"))
+{return{name:"A"}}
+ })
+}
+
+
+
+
+
+</script>
+<div id="invtdiv">
+<h1>Inventory Manegement System</h1>
+<lable>Id:</lable><input type ="number" id="id">
+<lable>Name:<input type ="text" id="name">
+<lable>Category:</lable><input type ="text" id="category">
+<lable>Price:</lable><input type ="number" id="price">
+<button onclick="Insert_Data()">Insert-Data</button> </div>
+</div>
+
+
+<!--Table-->
+<table id="myTable" border="2">
+    <thead>
+       <tr id="">
+        <th>ID:</th>
+        <th>Name:</th>
+        <th>Category:</th>
+        <th>Price:</th>
+    </tr>
+    </thead>
+   <tbody id="datas">
+
+   </tbody>
+
+
+
+</table>
+<script>
+
+</script>
