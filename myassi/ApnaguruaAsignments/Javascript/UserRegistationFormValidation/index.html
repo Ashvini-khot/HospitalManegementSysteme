@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registration Form</title>
+    <link href="style.css" rel="stylesheet" >
+   
+</head>
+<body>
+   
+    <header></header>
+    <main>
+        <script>
+            function SubmiteData(e)
+            {
+                e.preventDefault();
+            var  formdata=new FormData(e.target);
+            console.log(formdata.get("fullname"));
+                let f=formdata.get("fullname");
+            
+            if(f.length<=2)
+            {
+              // document.getElementById("nameerror").innerHTML="Name must be more than two characters";
+              alert("Name must be more than two charecter.....")
+               return;
+            }
+            else
+            {
+                alert("Valide Name")
+            }
+
+            var  text = document.getElementById("email").value;
+           
+            var rgex =/^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$/;
+           
+            if(rgex.test( text))
+           {
+           // document.getElementById("emerr").style.color="blue";
+            //document.getElementById("emerr").innerHTML="Valid";
+            alert("Valide Email")
+           }
+           else {
+           // document.getElementById("emerr").style.color="red";
+           // document.getElementById("emerr").innerHTML = "InvalidEmail";
+           alert("Invalide Email")
+
+           }
+           
+            var  text1 = document.getElementById("psw").value;
+            var ps=/(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}/;
+            if(ps.test(text1))
+           {
+
+           // document.getElementById("pswerr").style.color="blue";
+            //document.getElementById("pswerr").innerHTML="Valide";
+            alert("Valide Pasword")
+           }
+           else {
+            //document.getElementById("pswerr").style.color="red";
+            //document.getElementById("pswerr").innerHTML = "InvalidePassword";
+            alert("invalide Password")
+
+           }
+
+          var psw1= document.getElementById("psw").value;
+          var psw2= document.getElementById("cpwd").value;
+          if(psw1==psw2)
+          {
+           // document.getElementById("cpswrerr").innerHTML="Passawrd Confirm";
+           // document.getElementById("cpswrerr").style.color="blue";
+           alert("Password Confirmed")
+          }
+          else{
+           // document.getElementById("cpswrerr").innerHTML="Passawrd not match";
+            //document.getElementById("cpswrerr").style.color="red";
+            alert("Password Not Matches")
+        }
+          }
+            
+        </script>
+        <form onsubmit="SubmiteData(event)" >
+            <h1>User Registration Form</h1>
+            <input type="text" placeholder="Full Name" id="fullname" name="fullname"onchange="if(event.target.value.length>2){document.getElementById('nameerror').style.visibility='hidden'}"><br>
+            <div id="nameerror" style="color: red;" ></div>
+            <div id="namenoerror" style="color: rgb(120, 120, 216);"></div>
+            <input type="text" placeholder="Emaile" id="email" onchange=""><br>
+            <div id="emerr"></div>
+            <input type="password" placeholder="Password" id="psw"><br>
+            <div id="pswerr"></div>
+            <input type="password" placeholder="Confirm-password" id="cpwd"><br>
+            <div id="cpswrerr"></div>
+            <input type="submit" value="Submite" id="btn" >
+        </form>
+    </main>
+    <footer></footer>
+    
+</body>
+</html>

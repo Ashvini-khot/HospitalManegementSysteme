@@ -1,0 +1,217 @@
+body{
+background-image: radial-gradient(#673AB7, transparent);
+    width: 100vh;
+}
+nav {
+    background-color: #673ab787;
+    height: 70px;
+    width: 100%;
+    position: fixed;
+}
+a{
+    font-size: 25px;
+    color: antiquewhite;
+    margin: 30px;
+}
+select {
+    font-size: 20px;
+    color: antiquewhite;
+    background-color: #673ab787;
+    text-decoration: underline;
+}
+
+h1 {
+    position: relative;
+    top:87px;
+    font-size: 50px;
+    color: #9C27B0;
+    left: 60%;
+    /* background-color: lavender; */
+    width: 350px;
+    box-shadow: 11px 6px 5px 7px;
+    align-content: center;
+}
+
+section {
+    position: relative;
+    display: flex;
+    top: 100px;
+    left: px;
+}
+img
+{margin: 30px;
+height: 200px;
+width: 250px;}
+
+.w3-animate{
+    animation: fading 10s infinite;
+}
+h2 {
+    position: relative;
+    top: -80px;
+    left: 30px;
+    color: #24065a;
+    /* background-color: #6218e5; */
+    text-decoration: underline;
+}
+p
+{
+margin: 30px;
+    position: relative;
+    top: -60px;
+    font-size: 12px;
+    font-style: revert-layer;
+}
+button{
+position: relative;
+    top: -120px;
+    left: 100px;
+    background-image: linear-gradient(45deg, #08155c, #0000000f);
+    /* border: 20px; */
+    border-radius: 20px;
+    width: 120px;
+}
+@keyframes WHchanger {
+    
+    100%
+    {
+       
+        transform: rotateZ(10deg);
+        border-radius: 90px;
+    }
+
+}
+img:hover
+{
+    position: relative;
+    /*left: 300px;*/
+    height: 230px;
+    width: 300px;
+    /*background-color: chartreuse;*/
+    animation: WHchanger 0.5s ease-in-out 1s infinite alternate forwards;
+}
+ul {
+    position: relative;
+    top: -10px;
+    left: 170px;
+    display: flex;
+    word-spacing: 50px;
+}
+.subul {
+    display: inline;
+    position: relative;
+    left: -20px;
+}
+nav ul li{
+    width: 200px;
+    height: 33px;
+    padding: 11px;
+    background-color: #0000000f;
+    color: white;
+    font-size: 24px;
+    border: 1px solid white;
+    text-align: center;
+    float: left;
+    list-style: none;
+
+}
+nav ul li:hover
+{
+    background-color: #24065a;
+}
+
+    nav ul ul {
+        /* float: left; */
+        position: relative;
+        left: -53.5px;
+        width: 250px;
+        top: 19px;
+        display: none;
+    }
+    nav ul li:hover>ul
+    {
+        display: block;
+        height: 20px;
+    }
+    nav ul li ul li{
+      height: 20px;
+    }
+    .spinner {
+        position: fixed;
+        top: 25%;
+        left: 30%;
+        background-color: transparent;
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        border: 20px solid white;
+       border-top-color: #24065a;
+       animation: spin 4s linear infinite;
+     
+       
+      
+    }
+    .spinner-hidden
+    {
+        animation: spin 4s;
+        opacity: 0px;
+        visibility: hidden;
+    }
+    
+    
+    @keyframes spin {
+        0% {
+          transform: rotate(0deg);
+          visibility:visible;
+          opacity: 1;
+        }
+        50%{
+          transform: rotate(180deg);
+          visibility:visible;
+        }
+        100% {
+            transform: rotate(360deg);
+            visibility: hidden;
+            display: none;
+            opacity: 0;
+           /* height: 0px;
+          /*  width: 0px;*/
+        }
+        
+
+    }
+    .message-alert {
+        position: fixed;
+        top: 15%;
+        left: 75%;
+        /* background-color: #E91E63; */
+        background-image: linear-gradient(45deg, #d90e53, #4d14b3);
+        width: 25%;
+        height: 70%;
+        border: 20px solid white;
+        align-content: center;
+        padding: 10px;
+        animation: alert 4s linear infinite;
+    }
+    h4 {
+        text-shadow: #4CAF50 -4px 0px;
+        font-size: 30px;
+    }
+    @keyframes alert {
+        0% {
+          
+          visibility:visible;
+          opacity: 1;
+        }
+        50%{
+         
+          visibility:visible;
+        }
+        100% {
+            
+            visibility: hidden;
+            display: none;
+            opacity: 0;
+           /* height: 0px;
+          /*  width: 0px;*/
+        }

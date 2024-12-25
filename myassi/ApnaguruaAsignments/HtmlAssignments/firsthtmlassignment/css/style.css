@@ -1,0 +1,28 @@
+/*Comment*/
+aside{
+    color: brown
+}
+body
+{
+   background-color: rgb(187, 187, 250); 
+   background-image: url("./../images/wallpaper.avif");
+   background-size: 100% 100%;
+   border: 5px rgb(180, 151, 226) solid;
+   margin: 50px;
+   padding: 50px;
+
+
+
+   ;
+   
+
+  
+   
+}
+
+.background-apply
+{
+border: 10px dashed;
+background-image: url("./../images/wallpaper.avif");
+background-size: 500px 500px;  
+}
